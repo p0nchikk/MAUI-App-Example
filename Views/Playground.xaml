@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExampleApp.Views.Playground"
+             Title="Playground">
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout Spacing="50">
+            <Label Text="Rubik's Cube" FontSize="80" HorizontalOptions="Center"/>
+
+            <Grid RowDefinitions="*, *, *" 
+                  ColumnDefinitions="*, *, *"
+                  WidthRequest="300"
+                  HeightRequest="300">
+                <!-- First Row -->
+                <Button Grid.Row="0" Grid.Column="0" BackgroundColor="Red"/>
+                <Button Grid.Row="0" Grid.Column="2" BackgroundColor="White"/> 
+                <Button Grid.Row="0" Grid.Column="3" BackgroundColor="Yellow"/>
+                <!-- Second Row -->
+                <Button Grid.Row="1" Grid.Column="0" BackgroundColor="Red"/>
+                <Button Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow"/>
+                <Button Grid.Row="1" Grid.Column="2" BackgroundColor="Blue"/>
+                <!-- Third Row -->
+                <Button Grid.Row="2" Grid.Column="0" BackgroundColor="Orange"/>
+                <Button Grid.Row="2" Grid.Column="1" BackgroundColor="Green"/>
+                <Button Grid.Row="2" Grid.Column="2" BackgroundColor="Yellow"/>
+            </Grid>
+
+            <Label Text="Germany" FontSize="80" HorizontalOptions="Center"/>
+            
+            <Grid RowDefinitions="*, *, *" 
+                  WidthRequest="300"
+                  HeightRequest="300">
+                <!-- First Row -->
+                <Button Grid.Row="0" BackgroundColor="Black"/>
+                <!-- Second Row -->
+                <Button Grid.Row="1" BackgroundColor="Red"/>
+                <!-- Third Row -->
+                <Button Grid.Row="2"  BackgroundColor="Orange"/>
+            </Grid>
+
+            <Label Text="Italy" FontSize="80" HorizontalOptions="Center"/>
+
+            <Grid ColumnDefinitions="*, *, *" 
+                  WidthRequest="300"
+                  HeightRequest="300">
+                <!-- First Row -->
+                <Button Grid.Column="0" BackgroundColor="Green"/>
+                <!-- Second Row -->
+                <Button Grid.Column="1" BackgroundColor="White"/>
+                <!-- Third Row -->
+                <Button Grid.Column="2" BackgroundColor="Red"/>
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
