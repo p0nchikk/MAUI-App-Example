@@ -8,7 +8,7 @@ namespace ExampleApp
         {
             InitializeComponent();
 
-            MainPage = new Playground();
+            MainPage = new Calculator();
         }
     }
 }

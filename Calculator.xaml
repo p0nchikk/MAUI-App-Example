@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExampleApp.Calculator"
+             Title="Calculator">
+    <VerticalStackLayout BackgroundColor="Beige">
+        <Border
+              Stroke="Black"
+              StrokeThickness="2"/>
+            <Grid RowDefinitions="*,*,*,*,*,*"
+                   ColumnDefinitions="*,*,*,*" 
+                   HorizontalOptions="Center"
+                   WidthRequest="400"
+                   HeightRequest="500"
+                   Padding="60">
+
+                <!-- Text -->
+                <!--#region Text -->
+                <Border 
+         Grid.Row="0" 
+         Grid.ColumnSpan="5"
+         Stroke="Black"
+         StrokeThickness="2">
+                    <Label 
+            Text="The best calculator!"
+            BackgroundColor="Gray"
+            FontSize="Caption"/>
+                </Border>
+                <!--#endregion-->
+
+                <!-- Entry -->
+                <!--#region Entry -->
+                <Border
+         Grid.Row="1" 
+         Grid.ColumnSpan="5"
+         Stroke="Black"
+         StrokeThickness="2">
+                    <Label                   
+            x:Name="entView"
+            BackgroundColor="Gray"/>
+                </Border>
+                <!--#endregion-->
+
+                <!-- Numbers -->
+                <!--#region Upper Row-->
+                <Button
+         Grid.Row="2" 
+         Grid.Column="2"
+         Text="9"
+         x:Name="btn9"
+         />
+                <Button
+         Grid.Row="2" 
+         Grid.Column="1"
+         Text="8"
+         x:Name="btn8"
+         />
+                <Button
+         Grid.Row="2" 
+         Grid.Column="0"
+         Text="7"
+         x:Name="btn7"
+         />
+                <!--#endregion-->
+                <!--#region Middle Row-->
+                <Button
+         Grid.Row="3" 
+         Grid.Column="2"
+         Text="6"
+         x:Name="btn6"
+         />
+                <Button
+         Grid.Row="3" 
+         Grid.Column="1"
+         Text="5"
+         x:Name="btn5"
+         />
+                <Button
+         Grid.Row="3" 
+         Grid.Column="0"
+         Text="4"
+         x:Name="btn4"
+         />
+                <!--#endregion-->
+                <!-- #region Bottom rows -->
+                <Button
+         Grid.Row="4" 
+         Grid.Column="2"
+         Text="3"
+         x:Name="btn3"
+         />
+                <Button
+         Grid.Row="4" 
+         Grid.Column="1"
+         Text="2"
+         x:Name="btn2"
+         />
+                <Button
+         Grid.Row="4" 
+         Grid.Column="0"
+         Text="1"
+         x:Name="btn1"
+         />
+                <Button
+         Grid.Row="5" 
+         Grid.ColumnSpan="3"
+         Text="0"
+         x:Name="btn0"
+         />
+                <!--#endregion-->
+
+                <!-- Math Operators -->
+                <!--#region Math Operators -->
+                <Button
+         Grid.Row="2" 
+         Grid.Column="3"
+         Text="+"
+         x:Name="btnPlus"
+         />
+                <Button
+         Grid.Row="3" 
+         Grid.Column="3"
+         Text="-"
+         x:Name="btnMinus"
+         />
+                <Button
+         Grid.Row="4" 
+         Grid.Column="3"
+         Text="*"
+         x:Name="btnMult"
+         />
+            <Button
+         Grid.Row="5" 
+         Grid.Column="3"
+         Text="AC"
+         x:Name="btnAC"
+         />
+            <Button
+            Grid.Row="5" 
+            Grid.Column="3"
+            Text="="
+            x:Name="btnEquel" />
+                <!--#endregion-->
+
+            </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>
